@@ -1,0 +1,9 @@
+<h1>Text Chat App</h1>
+
+<ul>
+  <li *ngFor = "let message of messages | async">{{message.$value}}</li>
+</ul>
+
+<input id="messages" type="text" #message placeholder="Enter your message">
+
+<button>Post Message</button>
